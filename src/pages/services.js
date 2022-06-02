@@ -20,9 +20,9 @@ const Services = () => {
 
   return (
     <Layout>
-      <div className="w-4/5 mx-auto my-10">
+      <div className="w-11/12 md:w-4/5 mx-auto my-10">
         <div className="flex justify-between items-center my-10">
-          <h1 className="text-base lg:text-xl font-bold">
+          <h1 className="text-base lg:text-xl font-bold text-center md:text-left">
             WHAT WE HAVE DONE - WHAT WE CAN DO
           </h1>
           <dir className="text-xs lg:text-base">
@@ -38,7 +38,7 @@ const Services = () => {
 
         {services[page - 1].map((service, i) => (
           <div
-            className="flex flex-col lg:flex-row p-10"
+            className="flex flex-col lg:flex-row p-4"
             style={{ backgroundColor: i % 2 === 0 && 'rgb(241 245 249)' }}
           >
             <img
